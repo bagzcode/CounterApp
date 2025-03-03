@@ -1,6 +1,9 @@
 import "./App.css";
 
 function App() {
+  const author = (author = "HCI Class") => {
+    return author;
+  };
   let count = 0;
   const decrease = () => {
     count -= 1;
@@ -10,10 +13,6 @@ function App() {
     count += 1;
     document.getElementById("count-display").innerText = count;
   };
-  const author = (author = "HCI Class") => {
-    return author;
-  };
-
   const reset = () => {
     count = 0;
     document.getElementById("count-display").innerText = count;
