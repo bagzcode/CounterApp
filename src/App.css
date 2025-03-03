@@ -34,9 +34,24 @@
 }
 
 .card {
-  padding: 2em;
+  display: flex;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
 }
 
 .read-the-docs {
   color: #888;
 }
+
+.button {
+  padding: 25px 20px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+

@@ -10,14 +10,31 @@ function App() {
     count += 1;
     document.getElementById("count-display").innerText = count;
   };
+  const author = (author = "HCI Class") => {
+    return author;
+  };
+
+  const reset = () => {
+    count = 0;
+    document.getElementById("count-display").innerText = count;
+  };
 
   return (
     <>
-      <h1>Counter App by React</h1>
+      <div>
+        <h1>Counter App by {author()}</h1>
+      </div>
       <div className="card">
-        <button onClick={decrease}>-</button>
+        <button className="button" onClick={decrease}>
+          -
+        </button>
         <h2 id="count-display">{count}</h2>
-        <button onClick={increase}>+</button>
+        <button className="button" onClick={increase}>
+          +
+        </button>
+      </div>
+      <div>
+        <button onClick={reset}>RESET</button>
       </div>
     </>
   );
